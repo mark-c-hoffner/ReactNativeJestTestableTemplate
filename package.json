@@ -1,12 +1,15 @@
 {
-  "name": "jesttest",
+  "name": "react-native-jest-testable-template",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "type": "module",
+  "main": "./src/index.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "test": "jest --coverage",
+    "watch-test": "jest --watchAll --coverage"
   },
   "dependencies": {
     "expo": "~49.0.13",
@@ -15,7 +18,12 @@
     "react-native": "0.72.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@babel/plugin-transform-dynamic-import": "^7.22.11",
+    "@testing-library/react-native": "^12.3.0",
+    "jest": "^29.2.1",
+    "jest-expo": "^49.0.0",
+    "react-test-renderer": "18.2.0"
   },
   "private": true
 }
